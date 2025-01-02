@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.back-link {
+    color: #4b98c4;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 4rem;
+}
+
+.description p {
+    margin: 0.8rem 0;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-title img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    border-radius: 5px;
+    width: 7rem;  /* Increased from 3rem */
+    height: 4px;
+    background-color: #4b98c4;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.stat-icon {
+    font-size: 2.5rem; /* Increased from default size */
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Fixed height */
+    width: 60px; /* Fixed width */
+}
+
+.stat-icon i {
+    font-size: 2.5rem; /* Match icon size with emojis */
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #cccccc;
+    text-transform: uppercase;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.sanctions {
+    margin-top: 4rem;
+}
+
+/* À ajouter dans le CSS précédent */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.tech-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.practice-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.detail-item strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.detail-item p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+.s-sanctions, .practice {
+    margin-top: 4rem;
+}
+
+.s-sanctions p, .practice p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #242424;
+    border-radius: 5px;
+}
+
+.tech-item img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 0.3rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
