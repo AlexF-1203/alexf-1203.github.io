@@ -6,6 +6,13 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -13,12 +20,32 @@ body {
 }
 
 .back-link {
+    background: none;
+    border: none;
     color: #4b98c4;
-    text-decoration: none;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    display: inline-block;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-end;
 }
+
+.back-link::before {
+    content: '←';
+    display: inline-block; /* Add this */
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover::before { /* Changed from ::after to ::before */
+    transform: translateX(-5px); /* Changed to negative value for left movement */
+}
+
+4b98c4
+
+
 
 h1 {
     font-size: 3.5rem;
@@ -158,6 +185,44 @@ h2::after {
     color: #cccccc;
     line-height: 1.6;
     margin-top: 2rem;
+}
+
+.projet-git {
+    display: flex;
+    gap: 3rem;
+    margin-left: auto;
+    margin-right: 4rem; /* Ajoute de l'espace à droite avant les icônes */
+}
+
+.projet-git a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 2rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.projet-git a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3f81a8;
+    transition: width 0.3s ease;
+}
+
+.projet-git a:hover {
+    color: #4b98c4;
+}
+
+.projet-git a:hover::after {
+    width: 100%;
 }
 
 .s-sanctions, .practice {
