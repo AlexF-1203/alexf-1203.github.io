@@ -385,7 +385,7 @@ main {
     }
 
     .nav-links {
-        display: none;
+        /* display: none; */
     }
 
     .timeline {

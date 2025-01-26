@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Basket</title>
+    <link rel="stylesheet" href="../collectionr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../">
+            <button class="back-link">RETOUR HOME PAGE</button>
+        </a>
+        
+        <div class="project-card">
+            <div class="project-title">
+            <h1>Stats Baskets</h1>
+            <img src="../image/logo_app.jpg" alt="">
+        </div>
+        
+        <div class="description-container">
+            <div class="description-text">
+                <p>Développement d'une application mobile conçus pour les fans de basket qui permet de suivre les scores des matchs ainsis que les statistiques des joueurs.</p>
+                <p>Projet personnel réaliser seul</p>
+                <p>Utilisations de Firebase pour les notifications push et de Postgresql pour la base de données.</p>
+                <p class="note">Projet limiter du fait du nombre de requête disponible gratuitement.</p>
+            </div>
+            <div class="video-container">
+                <video 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        class="demo-video">
+        <source src="../media/video_final.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+            </div>
+        </div>
+
+        <section class="stats">
+            <h2>Quelques chiffres</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-icon"><img src="../image/icons8-coffre-au-trésor-64 (1).png" alt=""></div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">statistiques précise pour les joueurs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><img src="../image/calender (2).svg" alt=""></div>
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">SEMAINE DE PROJETS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-users" style="color: #ffffff;"></i></div>
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">DÉVELOPPEUR</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s-sanctions">
+            <h2>API's </h2>
+            <div class="tech-stack">
+                <span class="tech-item"><img src="../image/rails-svgrepo-com.svg" alt="">Rails</span>
+                <span class="tech-item"><img src="../image/reactjs-svgrepo-com.svg" alt="">React Native</span>
+                <span class="tech-item"><img src="../image/icons8-firebase-48.png" alt="FireBase">FireBase</span>
+                <span class="tech-item"><img src="../image/icons8-postgresql-48.png" alt="">Postgresql</span>
+                <span class="tech-item"><img src="../image/apibasket.png" alt="">RapideApi • Api-NBA</span>
+            </div>
+            <p>Développement à partir d'api complexe et complète afin de mettre en avant les scores des équipes et les statistique de la partie.</p>
+            <p>Des données complexe pour chaque joueur afin de suivre leur performance</p>
+            <p>J'utilise l'api afin de récupérer les statistique des matchs chaque heure afin de garder à jour le suivis des partie quasiment en temps réel <br> avec une notifications quand le match est fini</p>
+        </section>
+        
+        <section class="practice">
+            <h2>Practice</h2>
+            <div class="tech-stack">
+                <span class="tech-item"><img src="../image/rails-svgrepo-com.svg" alt="">Rails</span>
+                <span class="tech-item"><img src="../image/reactjs-svgrepo-com.svg" alt="">React Native</span>
+                <span class="tech-item"><img src="../image/icons8-firebase-48.png" alt="FireBase">FireBase</span>
+                <span class="tech-item"><img src="../image/icons8-postgresql-48.png" alt="">Postgresql</span>
+            </div>
+            <div class="practice-details">
+                <div class="detail-item">
+                    <strong>Match :</strong>
+                    <p>Les données des matchs sont récupérer chaque heure afin de garder à jour le suivis des matchs en cours</p>
+                </div>
+                <div class="detail-item">
+                    <strong>Statistique :</strong>
+                    <p>Les Statistique des joueurs sont détailler et disponible à chaque fin de matchs avec plus de 12 stats détailler et différentes</p>
+                </div>
+                <div class="detail-item">
+                    <strong>Notification :</strong>
+                    <p>Des notifications push sur téléphone à chaque fin de match afin d'être tenu au courants.</p>
+                </div>
+            </div>
+            <p class="note">En cours de recherche afin d'optimiser le nombre de requête limiter afin de rajouter un système de tracker de joueur favorie.</p>
+        </section>
+    </div>
+</body>
+</html>
